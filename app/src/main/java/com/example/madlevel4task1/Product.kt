@@ -8,10 +8,10 @@ import androidx.room.PrimaryKey
 data class Product (
 
     @ColumnInfo(name = "name")
-    var productName: String,
+    var name: String,
 
     @ColumnInfo(name = "quantity")
-    var productQuantity: Short,
+    var quantity: Short,
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
