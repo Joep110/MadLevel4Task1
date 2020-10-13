@@ -9,6 +9,9 @@ import android.view.ViewGroup
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
+
+private lateinit var productRepository: ProductRepository
+
 class ShoppingListFragment : Fragment() {
 
     override fun onCreateView(
@@ -21,5 +24,12 @@ class ShoppingListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        productRepository = ProductRepository(requireContext())
+
+        initRv()
+    }
+
+    private fun initRv() {
+        TODO("Not yet implemented")
     }
 }
